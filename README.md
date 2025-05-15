@@ -12,7 +12,38 @@ This full-stack application is designed to process documents (currently supporti
 
 ## Final Result:
 
-<pre><code>```json { "invoice_to_name": "Jules Kovacek", "invoice_to_address": "Bode Route 569\n75863-7806 Port Shyannmouth", "invoice_number": "13725", "invoice_date": "14.05.2025", "payment_due_date": "21.05.2025", "company_name": "Moen, Heller and Keebler", "company_address": "Marilou Run 47\n81002 North Kristabury", "company_email": "cwehner@trantow.com", "company_ceo": "Alexandria Rath", "company_en_number": "EN332559286", "company_vat_number": "409/32/91", "total_net_price": "7.172,00 €", "vat_percentage": "16%", "vat_amount": "1.147,52 €", "invoice_total": "8.319,52 €", "bank_details": "GB27QULK86876833986067\nISZUNFIWFKD", "items": [ { "description": "Blanditiis expedita voluptas consectetur.", "price": "545,73 €", "amount": "8", "total": "4.365,84 €" }, { "description": "Voluptatibus enim dolore.", "price": "350,77 €", "amount": "8", "total": "2.806,16 €" } ] } ```</code></pre>
+{
+  "invoice_to_name": "Jules Kovacek",
+  "invoice_to_address": "Bode Route 569\n75863-7806 Port Shyannmouth",
+  "invoice_number": "13725",
+  "invoice_date": "14.05.2025",
+  "payment_due_date": "21.05.2025",
+  "company_name": "Moen, Heller and Keebler",
+  "company_address": "Marilou Run 47\n81002 North Kristabury",
+  "company_email": "cwehner@trantow.com",
+  "company_ceo": "Alexandria Rath",
+  "company_en_number": "EN332559286",
+  "company_vat_number": "409/32/91",
+  "total_net_price": "7.172,00 €",
+  "vat_percentage": "16%",
+  "vat_amount": "1.147,52 €",
+  "invoice_total": "8.319,52 €",
+  "bank_details": "GB27QULK86876833986067\nISZUNFIWFKD",
+  "items": [
+    {
+      "description": "Blanditiis expedita voluptas consectetur.",
+      "price": "545,73 €",
+      "amount": "8",
+      "total": "4.365,84 €"
+    },
+    {
+      "description": "Voluptatibus enim dolore.",
+      "price": "350,77 €",
+      "amount": "8",
+      "total": "2.806,16 €"
+    }
+  ]
+}
 
 
 ## Technologies Used
