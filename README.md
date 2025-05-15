@@ -15,6 +15,7 @@ This full-stack application is designed to process documents (currently supporti
 **Backend:**
 * Node.js
 * Express.js
+* Google Cloud Services
 
 **AI & Cloud Services:**
 * **Google Gemini API:** For dynamic prompt generation and final structured JSON output.
