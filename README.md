@@ -10,8 +10,11 @@ This full-stack application is designed to process documents (currently supporti
 ![alt text](./examples/image-2.png)
 
 
-## Final Result:
+## Final Result Example
 
+The application aims to produce a structured JSON output similar to the following example, containing the extracted key-value pairs from the processed document:
+
+```json
 {
   "invoice_to_name": "Jules Kovacek",
   "invoice_to_address": "Bode Route 569\n75863-7806 Port Shyannmouth",
