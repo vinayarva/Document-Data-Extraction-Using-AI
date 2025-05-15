@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require("uuid");
 const storage = new Storage({
   keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
 });
-const bucketName = 'ocr_result-data';
+const bucketName = process.env.BUCKET_NAME;
 const bucket = storage.bucket(bucketName);
 
 // function to upload a file to Google Cloud Storage

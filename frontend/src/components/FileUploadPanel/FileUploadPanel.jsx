@@ -10,8 +10,8 @@ function FileUploadPanel({
   processedFiles,
   selectedFileId,
   onSelectFileFromList,
-  isUploading, // Global loading state for the whole upload process
-  uploadError,  // Global error for the upload process
+  isUploading, 
+  uploadError, 
   customPrompt,
   onCustomPromptChange,
 }) {

@@ -4,12 +4,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const promptGenerator = async (extractedText) => {
   try {
-    const prompt = `You are a prompt generator. Given the following text, generate a clear and concise prompt that asks an AI to extract key-value pairs from it and return them in a JSON format. Do NOT include any sample JSON or explanation — only return the prompt string.
-    tell the in the promt what type text document in the promt
-Text:
-${extractedText}
-
-Only return the prompt:`;
+    const prompt = `You are a prompt generator. Given the following text, generate a clear and concise prompt that instructs an AI to identify the type of text document, extract relevant key-value pairs, and return them in JSON format. Do NOT include any sample JSON or explanations — only return the prompt string. Text: ${extractedText} Only return the prompt:`;
 
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",

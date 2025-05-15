@@ -9,7 +9,7 @@ function FileInput({ onChange, disabled, multiple }) {
                 accept="application/pdf"
                 onChange={onChange}
                 disabled={disabled}
-                multiple={multiple} // Enables multiple file selection
+                multiple={multiple} 
                 className="block w-full text-sm text-gray-500
                            file:mr-4 file:py-3 file:px-5
                            file:rounded-lg file:border-0

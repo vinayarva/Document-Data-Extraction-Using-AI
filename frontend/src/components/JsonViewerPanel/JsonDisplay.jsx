@@ -1,5 +1,5 @@
 import React from 'react';
-import { VIEW_MODES } from '../../constants'; // Assuming path is correct
+import { VIEW_MODES } from '../../constants'; 
 
 function JsonDisplay({ jsonData, viewMode }) {
   if (jsonData === null || jsonData === undefined) {
@@ -12,7 +12,7 @@ function JsonDisplay({ jsonData, viewMode }) {
     );
   }
 
-  // JSON View (handles both objects and arrays correctly)
+ 
   if (viewMode === VIEW_MODES.JSON) {
     return (
       <pre className="whitespace-pre-wrap text-sm bg-gray-800 text-white p-4 rounded-md overflow-x-auto">
@@ -24,16 +24,16 @@ function JsonDisplay({ jsonData, viewMode }) {
   // Table View
   if (viewMode === VIEW_MODES.TABLE) {
     if (Array.isArray(jsonData)) {
-      // Handle array of objects (e.g., line_items if passed directly)
+      
       if (jsonData.length === 0) {
         return <p className="text-gray-500 text-center p-4">The data array is empty.</p>;
       }
-      // Ensure all items are objects for header generation, or handle mixed types
+      
       const firstItem = jsonData[0];
       const headers = typeof firstItem === 'object' && firstItem !== null ? Object.keys(firstItem) : [];
       
       if (headers.length === 0 && jsonData.length > 0) {
-         // Array of non-objects or empty objects
+        
          return (
             <div>
                 <p className="text-gray-600 text-sm mb-2">Data is an array of simple values or empty objects. Displaying as a list:</p>
@@ -64,7 +64,7 @@ function JsonDisplay({ jsonData, viewMode }) {
                   {headers.map((header) => (
                     <td key={`${rowIndex}-${header}`} className="p-3 text-gray-700 border-r border-gray-300 last:border-r-0 break-words">
                       {typeof rowItem[header] === 'object' && rowItem[header] !== null
-                        ? JSON.stringify(rowItem[header]) // Stringify nested objects/arrays in cells
+                        ? JSON.stringify(rowItem[header]) 
                         : String(rowItem[header])}
                     </td>
                   ))}
@@ -75,7 +75,7 @@ function JsonDisplay({ jsonData, viewMode }) {
         </div>
       );
     } else if (typeof jsonData === 'object' && jsonData !== null) {
-      // Handle a single object (e.g., the main processedData object)
+      
       const entries = Object.entries(jsonData);
       if (entries.length === 0) {
         return <p className="text-gray-500 text-center p-4">The data object is empty.</p>;

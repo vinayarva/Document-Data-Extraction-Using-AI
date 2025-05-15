@@ -1,6 +1,6 @@
 import React from 'react';
-import ViewModeButton from '../ui/ViewModeButton'; // Assuming path is correct
-import { VIEW_MODES } from '../../constants';     // Assuming path is correct
+import ViewModeButton from '../ui/ViewModeButton'; 
+import { VIEW_MODES } from '../../constants';     
 
 function JsonViewerHeader({ currentViewMode, onSetViewMode }) {
     return (
