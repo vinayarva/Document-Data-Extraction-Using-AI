@@ -23,8 +23,7 @@ This full-stack application is designed to process documents (currently supporti
 * **Google Cloud Storage:** For storing uploaded documents and potentially processed data.
 
 **Deployment:**
-* **Backend:** Amazon EC2 Instance
-* **Frontend:** Render
+* **Backend and Frontend:**  Render
 
 ## Features
 
