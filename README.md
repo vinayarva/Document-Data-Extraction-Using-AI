@@ -46,7 +46,7 @@ The application aims to produce a structured JSON output similar to the followin
       "total": "2.806,16 €"
     }
   ]
-}```
+}
 
 
 ## Technologies Used
